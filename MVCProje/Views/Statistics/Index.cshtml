@@ -1,0 +1,58 @@
+﻿@using MVCProje.Models
+@model Statistics
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+
+<div class="row row-cols-3">
+    <div class="col text-center">
+        <div class="card text-white bg-primary mb-3" style="height:300px;">
+            <div class="card-body ">
+                <br /><br /><br />
+                <p class="card-text " style="font: bold 20px verdana">Toplam Kategori Sayısı</p>
+                <p class="card-text " style="font: bold 40px verdana">@Model.categoryCount</p>
+            </div>
+        </div>
+    </div>
+    <div class="col text-center">
+        <div class="card text-white bg-primary mb-3" style="height:300px;">
+            <div class="card-body ">
+                <br /><br /><br />
+                <p class="card-text " style="font: bold 20px verdana">Başlık Tablosunda Yazılım Kategorisine Ait Başlık Sayısı</p>
+                <p class="card-text " style="font: bold 40px verdana">@Model.headingCount</p>
+            </div>
+        </div>
+    </div>
+    <div class="col text-center">
+        <div class="card text-white bg-primary mb-3" style="height: 300px;">
+            <div class="card-body ">
+                <br /><br /><br />
+                <p class="card-text " style="font: bold 20px verdana">İsminde 'A' Harfi Bulunan Yazarların Sayısı</p>
+                <p class="card-text " style="font: bold 40px verdana">@Model.authorCount</p>
+            </div>
+        </div>
+    </div>
+    <div class="col text-center">
+        <div class="card text-white bg-primary mb-3" style="height:300px;">
+            <div class="card-body ">
+                <br /><br /><br />
+                <p class="card-text " style="font: bold 20px verdana">En Fazla Başlığa Sahip Kategori</p>
+                <p class="card-text " style="font: bold 40px verdana">@Model.categoryWithMostHeadings</p>
+            </div>
+        </div>
+    </div><div class="col text-center">
+    <div class="card text-white bg-primary mb-3" style="height:300px;">
+        <div class="card-body ">
+            <br /><br /><br />
+            <p class="card-text " style="font: bold 20px verdana">Aktif ve Pasif Durumdaki Kategorilerin Farkı</p>
+            <p class="card-text " style="font: bold 40px verdana">@Model.diff</p>
+        </div>
+    </div>
+</div>
+</div>
